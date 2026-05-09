@@ -111,17 +111,16 @@ header {
 }
 
 .navigation a {
-    display: block;
+    display: flex;
+    align-items: center;
     padding: 0.75rem 1.5rem;
     color: #e8e8f0;
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: 400;
     border-left: 3px solid transparent;
-    transition: background-color var(--transition), border-color var(--transition), color var(--transition);
     min-height: 44px;
-    display: flex;
-    align-items: center;
+    transition: background-color var(--transition), border-color var(--transition), color var(--transition);
 }
 
 .navigation a:hover {
@@ -152,6 +151,13 @@ main>h1 {
     border-bottom: 2px solid var(--color-accent);
 }
 
+.top-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
 section {
     background-color: var(--color-surface);
     border-radius: var(--radius);
@@ -162,10 +168,15 @@ section {
 }
 
 section h2 {
-    font-family: var(--font-display);
-    font-size: 1.5rem;
-    color: var(--color-primary);
-    margin-bottom: 1rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin: -1.75rem -1.5rem 1.25rem;
+    padding: 0.6rem 1.5rem;
+    border-radius: var(--radius) var(--radius) 0 0;
 }
 
 section p {
@@ -178,33 +189,14 @@ section p:last-child {
     margin-bottom: 0;
 }
 
-.section-description {
-    margin-bottom: 1.25rem;
-}
-
-.contact-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 1rem;
-}
-
-.contact-list li {
-    color: var(--color-text-muted);
-    font-size: 0.95rem;
-}
-
-.contact-list a {
-    color: var(--color-accent);
-    text-decoration: none;
-    font-weight: 600;
-    transition: color var(--transition);
-}
-
-.contact-list a:hover {
-    color: var(--color-primary);
-    text-decoration: underline;
+.section-photo img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    border-radius: var(--radius);
+    object-fit: cover;
+    min-height: 200px;
 }
 
 .filter-buttons {
@@ -227,11 +219,7 @@ section p:last-child {
     transition: background-color var(--transition), color var(--transition);
 }
 
-.filter-btn:hover {
-    background-color: var(--color-primary);
-    color: #fff;
-}
-
+.filter-btn:hover,
 .filter-btn.active {
     background-color: var(--color-primary);
     color: #fff;
@@ -239,16 +227,16 @@ section p:last-child {
 
 .course-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 0.75rem;
-    margin-bottom: 1.25rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
 }
 
 .course-card {
-    background-color: var(--color-bg);
-    border: 2px solid var(--color-border);
+    background-color: var(--color-border);
+    border: 1px solid #bbb;
     border-radius: var(--radius);
-    padding: 0.85rem 1rem;
+    padding: 0.6rem 0.5rem;
     text-align: center;
     transition: transform var(--transition), box-shadow var(--transition);
 }
@@ -259,16 +247,14 @@ section p:last-child {
 }
 
 .course-card .course-code {
-    font-weight: 700;
-    font-size: 1rem;
-    color: var(--color-primary);
     display: block;
-    margin-bottom: 0.25rem;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--color-primary);
 }
 
 .course-card .course-credits {
-    font-size: 0.8rem;
-    color: var(--color-text-muted);
+    display: none;
 }
 
 .course-card.completed {
@@ -283,21 +269,18 @@ section p:last-child {
 .course-card.completed::after {
     content: "✓";
     display: block;
-    font-size: 1rem;
-    color: var(--color-completed);
-    margin-top: 0.25rem;
+    font-size: 0.8rem;
     font-weight: 700;
+    color: var(--color-completed);
 }
 
 .credit-total {
-    font-size: 0.95rem;
-    color: var(--color-text);
-    margin-bottom: 0 !important;
-}
-
-.credit-total strong {
-    color: var(--color-primary);
-    font-size: 1.05rem;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    text-align: center;
+    font-style: italic;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
 }
 
 footer {
@@ -330,91 +313,4 @@ footer p {
     margin: 0.3rem 0;
     font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.65);
-}
-
-section h2 {
-    background-color: var(--color-primary);
-    color: #fff;
-    margin: -1.75rem -1.5rem 1.25rem;
-    padding: 0.6rem 1.5rem;
-    font-family: var(--font-body);
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-    border-radius: var(--radius) var(--radius) 0 0;
-}
-
-.top-row {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.section-photo img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    display: block;
-    border-radius: var(--radius);
-    object-fit: cover;
-    min-height: 200px;
-}
-
-.course-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
-    margin-bottom: 0.75rem;
-}
-
-.course-card {
-    background-color: var(--color-border);
-    border: 1px solid #bbb;
-    border-radius: var(--radius);
-    padding: 0.6rem 0.5rem;
-    text-align: center;
-    transition: transform var(--transition), box-shadow var(--transition);
-}
-
-.course-card:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-}
-
-.course-card .course-code {
-    font-weight: 600;
-    font-size: 0.85rem;
-    color: var(--color-primary);
-    display: block;
-}
-
-.course-card .course-credits {
-    display: none;
-}
-
-.course-card.completed {
-    background-color: var(--color-completed-bg);
-    border-color: var(--color-completed);
-}
-
-.course-card.completed .course-code {
-    color: var(--color-completed);
-}
-
-.course-card.completed::after {
-    content: "✓";
-    font-size: 0.8rem;
-    color: var(--color-completed);
-    font-weight: 700;
-    display: block;
-}
-
-.credit-total {
-    font-size: 0.85rem;
-    color: var(--color-text-muted);
-    text-align: center;
-    font-style: italic;
-    margin-top: 0.5rem;
-    margin-bottom: 0 !important;
 }
