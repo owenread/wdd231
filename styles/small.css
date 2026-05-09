@@ -8,13 +8,24 @@
     --color-text: #1e1e2e;
     --color-text-muted: #5a5a72;
     --color-border: #ddd8ce;
+    --color-border-dark: #bbbbbb;
     --color-completed: #2d6a4f;
     --color-completed-bg: #d8f3dc;
+    --color-nav-text: #e8e8f0;
+    --color-white: #ffffff;
+    --color-shadow: #1a274419;
+    --color-shadow-md: #1a274426;
+    --color-hamburger-border: #ffffff59;
+    --color-hamburger-hover: #c9a84c1e;
+    --color-nav-hover-bg: #ffffff14;
+    --color-nav-current-bg: #c9a84c1a;
+    --color-footer-text: #ffffffa6;
+    --color-footer-base: #ffffffbf;
     --font-display: 'DM Serif Display', Georgia, serif;
     --font-body: 'DM Sans', sans-serif;
     --radius: 6px;
-    --shadow: 0 2px 8px rgba(26, 39, 68, 0.10);
-    --shadow-md: 0 4px 16px rgba(26, 39, 68, 0.15);
+    --shadow: 0 2px 8px var(--color-shadow);
+    --shadow-md: 0 4px 16px var(--color-shadow-md);
     --transition: 0.2s ease;
 }
 
@@ -41,7 +52,7 @@ header {
     justify-content: space-between;
     padding: 0.75rem 1.25rem;
     background-color: var(--color-primary);
-    color: #fff;
+    color: var(--color-white);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -63,18 +74,18 @@ header {
 .header-brand span {
     font-family: var(--font-display);
     font-size: 1.15rem;
-    color: #fff;
+    color: var(--color-white);
     letter-spacing: 0.01em;
 }
 
 .hamburger {
     background: none;
-    border: 2px solid rgba(255, 255, 255, 0.35);
+    border: 2px solid var(--color-hamburger-border);
     border-radius: var(--radius);
     cursor: pointer;
     width: 44px;
     height: 44px;
-    color: #fff;
+    color: var(--color-white);
     font-size: 1.4rem;
     display: flex;
     align-items: center;
@@ -84,7 +95,7 @@ header {
 
 .hamburger:hover {
     border-color: var(--color-accent);
-    background-color: rgba(201, 168, 76, 0.12);
+    background-color: var(--color-hamburger-hover);
 }
 
 .hamburger::before {
@@ -99,6 +110,7 @@ header {
 .navigation {
     display: none;
     background-color: var(--color-primary-light);
+    color: var(--color-nav-text);
 }
 
 .navigation.show {
@@ -114,7 +126,7 @@ header {
     display: flex;
     align-items: center;
     padding: 0.75rem 1.5rem;
-    color: #e8e8f0;
+    color: var(--color-nav-text);
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: 400;
@@ -124,16 +136,16 @@ header {
 }
 
 .navigation a:hover {
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: var(--color-nav-hover-bg);
     border-left-color: var(--color-accent);
-    color: #fff;
+    color: var(--color-white);
 }
 
 .navigation .current a {
     border-left-color: var(--color-accent);
     color: var(--color-accent-light);
     font-weight: 600;
-    background-color: rgba(201, 168, 76, 0.1);
+    background-color: var(--color-nav-current-bg);
 }
 
 main {
@@ -169,7 +181,7 @@ section {
 
 section h2 {
     background-color: var(--color-primary);
-    color: #fff;
+    color: var(--color-white);
     font-family: var(--font-body);
     font-size: 1rem;
     font-weight: 600;
@@ -222,7 +234,7 @@ section p:last-child {
 .filter-btn:hover,
 .filter-btn.active {
     background-color: var(--color-primary);
-    color: #fff;
+    color: var(--color-white);
 }
 
 .course-grid {
@@ -234,7 +246,7 @@ section p:last-child {
 
 .course-card {
     background-color: var(--color-border);
-    border: 1px solid #bbb;
+    border: 1px solid var(--color-border-dark);
     border-radius: var(--radius);
     padding: 0.6rem 0.5rem;
     text-align: center;
@@ -285,7 +297,7 @@ section p:last-child {
 
 footer {
     background-color: var(--color-primary);
-    color: rgba(255, 255, 255, 0.75);
+    color: var(--color-footer-base);
     text-align: center;
     padding: 2rem 1.25rem;
 }
@@ -312,5 +324,5 @@ footer {
 footer p {
     margin: 0.3rem 0;
     font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.65);
+    color: var(--color-footer-text);
 }
