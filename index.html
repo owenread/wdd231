@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test HTML</title>
+    <title>Owen M. Read</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
+
 <body>
-    Hello World!
+    <header>
+        <img src="images/logo.svg" alt="site logo" width="1" height="1">
+        <span>Owen M. Read</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com/owenread" target="_blank">
+                <img src="images/github.svg" alt="GitHub" width="48" height="48">
+            </a>
+            <a href="https://www.linkedin.com/in/owen-read-2b4b21265/" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="48" height="48">
+            </a>
+
+        </div>
+        <p>Owen M. Read</p>
+        <p>&copy; <span id="current-year"></span> | WDD 231</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
+
 </html>
