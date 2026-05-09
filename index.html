@@ -4,43 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Owen M. Read</title>
+    <meta name="description"
+        content="Owen M. Read's WDD 231 course home page showcasing web frontend development skills and coursework at BYU-Idaho.">
+    <meta name="author" content="Owen M. Read">
+    <title>Owen M. Read | WDD 231</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img src="images/logo.svg" alt="site logo" width="1" height="1">
-        <span>Owen M. Read</span>
-        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        <div class="header-brand">
+            <img src="images/logo.svg" alt="Site logo" width="32" height="32">
+            <span>Owen M. Read</span>
+        </div>
+        <button id="nav-button" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"></button>
     </header>
 
-    <nav id="nav-bar" class="navigation">
+    <nav id="nav-bar" class="navigation" aria-label="Main navigation">
         <ul>
-            <li class="current"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="final/index.html">Final</a></li>
         </ul>
     </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="top-row">
+            <section class="section-about">
+                <h2>About Me</h2>
+                <p>I'm Owen Read, a software development student at BYU-Idaho studying web and computer programming. I absolutely love
+                    learning how to program. There are so many wonderful and cool things that you can build and I can't wait to learn
+                    more about what's possible with programming! </p>
+                <p>Outside of coding I enjoy hiking, volleyball, and spending time with my family. Feel free to connect with me on
+                    GitHub or LinkedIn.</p>
+            </section>
+
+            <section class="section-photo">
+                <h2>Student Photo</h2>
+                <img src="images/profile.webp" alt="Owen M. Read" width="600" height="769">
+            </section>
+        </div>
+
+        <section class="section-certifications">
+            <h2>Web Certificate Courses</h2>
+            <div class="filter-buttons" role="group" aria-label="Filter courses by department">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="CSE">CSE</button>
+                <button class="filter-btn" data-filter="WDD">WDD</button>
+            </div>
+            <div id="course-cards" class="course-grid" aria-live="polite"></div>
+            <p class="credit-total">The total credits for course listed above is <strong id="credit-total">0</strong>
+            </p>
+        </section>
+    </main>
+
     <footer>
         <div class="social-icons">
-            <a href="https://github.com/owenread" target="_blank">
-                <img src="images/github.svg" alt="GitHub" width="48" height="48">
+            <a href="https://www.linkedin.com/in/owen-read-2b4b21265/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn profile">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="32" height="32">
             </a>
-            <a href="https://www.linkedin.com/in/owen-read-2b4b21265/" target="_blank">
-                <img src="images/linkedin.svg" alt="LinkedIn" width="48" height="48">
+            <a href="https://github.com/owenread" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                <img src="images/github.svg" alt="GitHub" width="32" height="32">
             </a>
-
         </div>
-        <p>Owen M. Read</p>
-        <p>&copy; <span id="current-year"></span> | WDD 231</p>
-        <p>Last Modified: <span id="last-modified"></span></p>
+        <p>&copy; <span id="current-year"></span> &bull; Owen M. Read &bull; Utah, USA</p>
+        <p id="last-modified">Last Modification: </p>
     </footer>
 
-    <script src="scripts/script.js"></script>
 </body>
 
 </html>
