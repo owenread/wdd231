@@ -45,7 +45,7 @@ function buildGridCard(member) {
         >
       </div>
       <div class="member-card-body">
-        <h3>${member.name}</h3>
+        <h2>${member.name}</h2>
         <span class="membership-badge ${levelClass}">${levelLabel}</span>
         <p class="member-desc">${member.description}</p>
         <address>

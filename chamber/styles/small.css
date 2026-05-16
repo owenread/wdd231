@@ -313,7 +313,7 @@ address {
     margin-top: 0.5rem;
     font-size: 0.8rem;
     font-weight: 600;
-    color: var(--color-accent);
+    color: var(--color-silver-text);
     text-decoration: none;
     letter-spacing: 0.02em;
     transition: color var(--transition);
