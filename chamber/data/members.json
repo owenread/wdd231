@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Alpine Valley Bakery",
+        "address": "123 Main St, American Fork, UT 84003",
+        "phone": "(801) 756-1201",
+        "website": "https://www.afchamber.org",
+        "image": "bakery.jpg",
+        "membershipLevel": 3,
+        "description": "Artisan breads, pastries, and custom cakes baked fresh daily."
+    },
+    {
+        "name": "Timpanogos Tech Solutions",
+        "address": "450 W State St, American Fork, UT 84003",
+        "phone": "(801) 756-3300",
+        "website": "https://www.afchamber.org",
+        "image": "tech.jpg",
+        "membershipLevel": 3,
+        "description": "Full-service IT support, networking, and software development for local businesses."
+    },
+    {
+        "name": "American Fork Hardware & Supply",
+        "address": "88 E Main St, American Fork, UT 84003",
+        "phone": "(801) 756-0055",
+        "website": "https://www.afchamber.org",
+        "image": "grill.jpg",
+        "membershipLevel": 2,
+        "description": "Your local hardware store serving American Fork since 1978."
+    },
+    {
+        "name": "Summit Realty Group",
+        "address": "210 N Center St, American Fork, UT 84003",
+        "phone": "(801) 756-4400",
+        "website": "https://www.afchamber.org",
+        "image": "realty.jpg",
+        "membershipLevel": 3,
+        "description": "Residential and commercial real estate services across Utah County."
+    },
+    {
+        "name": "Fork & Flame Grill",
+        "address": "35 E 100 N, American Fork, UT 84003",
+        "phone": "(801) 756-8822",
+        "website": "https://www.afchamber.org",
+        "image": "grill.jpg",
+        "membershipLevel": 2,
+        "description": "Family-owned steakhouse featuring locally sourced meats and seasonal sides."
+    },
+    {
+        "name": "Wasatch Wellness Clinic",
+        "address": "670 E 1100 N, American Fork, UT 84003",
+        "phone": "(801) 756-9910",
+        "website": "https://www.afchamber.org",
+        "image": "wellness.jpg",
+        "membershipLevel": 2,
+        "description": "Primary care, physical therapy, and integrative health services."
+    },
+    {
+        "name": "Cedar Hills Landscaping",
+        "address": "1020 N 500 W, American Fork, UT 84003",
+        "phone": "(801) 756-2271",
+        "website": "https://www.afchamber.org",
+        "image": "landscaping.jpg",
+        "membershipLevel": 1,
+        "description": "Residential and commercial landscaping, irrigation, and snow removal."
+    },
+    {
+        "name": "Provo River Fly Shop",
+        "address": "15 W 200 S, American Fork, UT 84003",
+        "phone": "(801) 756-5533",
+        "website": "https://www.afchamber.org",
+        "image": "fishing.jpg",
+        "membershipLevel": 1,
+        "description": "Guided fly fishing trips, gear, and lessons on Utah's finest waters."
+    }
+]
