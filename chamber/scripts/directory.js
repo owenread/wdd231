@@ -39,8 +39,6 @@ function buildGridCard(member) {
         <img
           src="images/${member.image}"
           alt="${member.name} logo"
-          width="120"
-          height="120"
           loading="lazy"
         >
       </div>
