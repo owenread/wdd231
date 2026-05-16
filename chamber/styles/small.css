@@ -286,7 +286,7 @@ section h2 {
     flex: 1;
 }
 
-.member-card-body h3 {
+.member-card-body h2 {
     font-family: var(--font-display);
     font-size: 1.1rem;
     color: var(--color-primary);
@@ -433,13 +433,13 @@ footer {
 footer p {
     margin: 0.3rem 0;
     font-size: 0.85rem;
-    color: var(--color-footer-text);
+    color: var(--color-white);
 }
 
 .footer-name {
     font-family: var(--font-display);
-    font-size: 1rem !important;
-    color: var(--color-white) !important;
+    font-size: 1rem;
+    color: var(--color-white);
 }
 
 footer a {

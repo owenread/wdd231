@@ -1,4 +1,3 @@
-
 @media (min-width: 640px) {
 
     header {
@@ -81,9 +80,16 @@
         gap: 1.5rem;
     }
 
+    .member-card-img-wrap {
+        height: 200px;
+        padding: 0;
+        overflow: hidden;
+    }
+
     .member-card-img-wrap img {
-        width: 96px;
-        height: 96px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .member-row {
@@ -127,8 +133,4 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .member-card-img-wrap img {
-        width: 110px;
-        height: 110px;
-    }
 }
