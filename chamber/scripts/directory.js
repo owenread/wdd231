@@ -52,7 +52,7 @@ function buildGridCard(member) {
           <span>${member.address}</span>
           <span>${member.phone}</span>
         </address>
-        <a href="${member.website}" target="_blank" rel="noopener noreferrer" class="member-link"> 
+        <a href="${member.website}" target="_blank" class="member-link"> 
           Visit Website
         </a>
       </div>
@@ -72,7 +72,7 @@ function buildListRow(member) {
       <div class="member-row-address">${member.address}</div>
       <div class="member-row-phone">${member.phone}</div>
       <div class="member-row-link">
-        <a href="${member.website}" target="_blank" rel="noopener noreferrer" class="member-link"> 
+        <a href="${member.website}" target="_blank"  class="member-link"> 
           Website
         </a>
       </div>
