@@ -133,4 +133,39 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .home-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .spotlights-section {
+        grid-column: 1 / -1;
+    }
+
+    .spotlights-section {
+        grid-column: auto;
+    }
+
+    .hero-content {
+        padding: 1.5rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+        padding: 0.75rem 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .cta-btn {
+        font-size: 1.1rem;
+        padding: 1rem 2rem;
+        border-width: 3px;
+    }
+
 }
