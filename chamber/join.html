@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Join the American Fork Area Chamber of Commerce. Choose a membership level and apply online today.">
+    <meta name="author" content="Owen M. Read">
+    <title>Join | American Fork Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Join | American Fork Chamber of Commerce">
+    <meta property="og:description"
+        content="Join the American Fork Area Chamber of Commerce. Choose a membership level and apply online today.">
+    <meta property="og:image" content="https://owenread.github.io/wdd231/chamber/images/commerce.jpg">
+    <meta property="og:url" content="https://owenread.github.io/wdd231/chamber/join.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-brand">
+            <img src="images/favicon.ico" alt="American Fork Chamber logo" width="32" height="32">
+            <span>AF Chamber of Commerce</span>
+        </div>
+        <button id="nav-button" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation" aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="current"><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 class="page-heading">Join the Chamber</h1>
+
+        <div class="join-layout">
+
+            <div class="form-section">
+                <h2>Membership Application</h2>
+
+                <form action="thank-you.html" method="get">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">
+                                First Name <span class="required-star" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="first-name" name="firstName" title="Enter your first name"
+                                autocomplete="given-name" required placeholder="Jane">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last-name">
+                                Last Name <span class="required-star" aria-hidden="true">*</span>
+                            </label>
+                            <input type="text" id="last-name" name="lastName" title="Enter your last name"
+                                autocomplete="family-name" required placeholder="Smith">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="org-title">
+                            Organizational Title
+                        </label>
+                        <input type="text" id="org-title" name="orgTitle"
+                            title="Enter your title within your organization (letters, hyphens, spaces, minimum 7 characters)"
+                            autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}"
+                            placeholder="e.g. Marketing Director">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            Email Address <span class="required-star" aria-hidden="true">*</span>
+                        </label>
+                        <input type="email" id="email" name="email" title="Enter a valid email address"
+                            autocomplete="email" required placeholder="jane.smith@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">
+                            Mobile Phone <span class="required-star" aria-hidden="true">*</span>
+                        </label>
+                        <input type="tel" id="phone" name="phone" title="Enter your mobile phone number"
+                            autocomplete="tel" required placeholder="(801) 555-0100">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="org-name">
+                            Business / Organization Name <span class="required-star" aria-hidden="true">*</span>
+                        </label>
+                        <input type="text" id="org-name" name="orgName"
+                            title="Enter the name of your business or organization" autocomplete="organization" required
+                            placeholder="Acme Corp">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="membership-level">
+                            Membership Level <span class="required-star" aria-hidden="true">*</span>
+                        </label>
+                        <select id="membership-level" name="membershipLevel" title="Select a membership level" required>
+                            <option value="" disabled selected>Select a level…</option>
+                            <option value="np">NP Membership — Non-profit (Free)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="org-description">
+                            Business / Organization Description
+                        </label>
+                        <textarea id="org-description" name="orgDescription"
+                            title="Briefly describe your business or organization"
+                            placeholder="Tell us a bit about your organization…"></textarea>
+                    </div>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <input type="submit" class="form-submit" value="Submit Application">
+                </form>
+            </div>
+
+            <div class="membership-section" aria-labelledby="membership-heading">
+                <h2 id="membership-heading">Membership Levels</h2>
+
+                <div class="membership-cards">
+
+                    <div class="membership-card np-card">
+                        <div class="membership-card-icon">🤝</div>
+                        <div class="membership-card-title">NP Membership</div>
+                        <div class="membership-card-price">Free</div>
+                        <button class="membership-card-link" aria-haspopup="dialog" data-modal="modal-np">Learn
+                            More</button>
+                    </div>
+
+                    <div class="membership-card bronze-card">
+                        <div class="membership-card-icon">🥉</div>
+                        <div class="membership-card-title">Bronze</div>
+                        <div class="membership-card-price">$200 / yr</div>
+                        <button class="membership-card-link" aria-haspopup="dialog" data-modal="modal-bronze">Learn
+                            More</button>
+                    </div>
+
+                    <div class="membership-card silver-card">
+                        <div class="membership-card-icon">🥈</div>
+                        <div class="membership-card-title">Silver</div>
+                        <div class="membership-card-price">$500 / yr</div>
+                        <button class="membership-card-link" aria-haspopup="dialog" data-modal="modal-silver">Learn
+                            More</button>
+                    </div>
+
+                    <div class="membership-card gold-card">
+                        <div class="membership-card-icon">🥇</div>
+                        <div class="membership-card-title">Gold</div>
+                        <div class="membership-card-price">$1,000 / yr</div>
+                        <button class="membership-card-link" aria-haspopup="dialog" data-modal="modal-gold">Learn
+                            More</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <div class="modal-overlay" id="modal-np" role="dialog" aria-modal="true" aria-labelledby="modal-np-title">
+        <div class="modal">
+            <button class="modal-close" aria-label="Close dialog">&times;</button>
+            <h2 class="modal-title" id="modal-np-title">NP Membership</h2>
+            <p class="modal-price">Free — for qualifying non-profit organizations</p>
+            <ul class="modal-benefits">
+                <li>Chamber directory listing</li>
+                <li>Access to monthly networking events</li>
+                <li>Member-only newsletter &amp; announcements</li>
+                <li>Ribbon cutting ceremony support</li>
+                <li>Referrals from the chamber office</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-bronze" role="dialog" aria-modal="true" aria-labelledby="modal-bronze-title">
+        <div class="modal">
+            <button class="modal-close" aria-label="Close dialog">&times;</button>
+            <h2 class="modal-title" id="modal-bronze-title">Bronze Membership</h2>
+            <p class="modal-price">$200 per year</p>
+            <ul class="modal-benefits">
+                <li>All NP Membership benefits</li>
+                <li>10% discount on chamber events</li>
+                <li>Basic website listing with logo</li>
+                <li>One free training session per year</li>
+                <li>Business profile in printed directory</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-silver" role="dialog" aria-modal="true" aria-labelledby="modal-silver-title">
+        <div class="modal">
+            <button class="modal-close" aria-label="Close dialog">&times;</button>
+            <h2 class="modal-title" id="modal-silver-title">Silver Membership</h2>
+            <p class="modal-price">$500 per year</p>
+            <ul class="modal-benefits">
+                <li>All Bronze Membership benefits</li>
+                <li>20% discount on all chamber events</li>
+                <li>Homepage spotlight rotation eligibility</li>
+                <li>Three free training sessions per year</li>
+                <li>Social media feature (once per quarter)</li>
+                <li>Priority event registration</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-gold" role="dialog" aria-modal="true" aria-labelledby="modal-gold-title">
+        <div class="modal">
+            <button class="modal-close" aria-label="Close dialog">&times;</button>
+            <h2 class="modal-title" id="modal-gold-title">Gold Membership</h2>
+            <p class="modal-price">$1,000 per year</p>
+            <ul class="modal-benefits">
+                <li>All Silver Membership benefits</li>
+                <li>Complimentary event admission (up to 4 events/yr)</li>
+                <li>Guaranteed homepage spotlight placement</li>
+                <li>Unlimited training sessions</li>
+                <li>Monthly social media feature</li>
+                <li>Premium ad placement in newsletter</li>
+                <li>Named sponsor recognition at annual expo</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-info">
+            <p class="footer-name">American Fork Area Chamber of Commerce</p>
+            <p>31 N Church St &bull; American Fork, UT 84003</p>
+            <p>(801) 756-5110 &bull; <a href="mailto:info@afchamber.org">info@afchamber.org</a></p>
+        </div>
+        <div class="footer-meta">
+            <p>&copy; <span id="current-year"></span> &bull; Owen M. Read &bull; WDD 231</p>
+            <p id="last-modified">Last Modified: </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
