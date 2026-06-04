@@ -133,6 +133,6 @@ pre {
 footer {
     text-align: center;
     padding: 1.5rem;
-    color: #6c757d;
+    color: var(--text-dark);
     font-size: 0.85rem;
 }
