@@ -108,6 +108,7 @@ pre {
 
 .teal {
     background-color: var(--accent);
+    color: #111111;
 }
 
 .light {
