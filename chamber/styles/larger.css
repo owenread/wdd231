@@ -189,7 +189,7 @@
 }
 
 @media (min-width: 1025px) {
-
+/* Learning css grid naming is so freaking cool! The fact that you can literally with text set up your breakpoints then with nth-child tell the program what each card is assigned to feels like magic! */
     .discover-grid {
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
